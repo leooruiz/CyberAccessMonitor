@@ -1,0 +1,30 @@
+﻿<Window x:Class="CyberAccessMonitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cyber Access Monitor - Login" Height="300" Width="400">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Cyber Access Monitor" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20" Grid.Row="0"/>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical">
+            <TextBlock Text="Usuário:"/>
+            <TextBox Name="UsernameBox" Width="200"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0,10,0,0">
+            <TextBlock Text="Senha:"/>
+            <PasswordBox Name="PasswordBox" Width="200"/>
+        </StackPanel>
+
+        <Button  Grid.Row="3" Content="Entrar" Width="100" Margin="0,20,0,0" Click="LoginButton_Click" HorizontalAlignment="Center"/>
+
+        <TextBlock Name="ErrorMessage" Foreground="Red" Grid.Row="4" Margin="0,10,0,0" TextAlignment="Center"/>
+    </Grid>
+</Window>
