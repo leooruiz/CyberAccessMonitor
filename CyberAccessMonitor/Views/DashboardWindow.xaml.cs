@@ -3,18 +3,7 @@ using CyberAccessMonitor.Services;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 
 namespace CyberAccessMonitor
@@ -33,7 +22,6 @@ namespace CyberAccessMonitor
             var janela = new RegistrarFalhaWindow();
             janela.ShowDialog();
 
-            // Se houver evento criado, adicione
             if (janela.EventoRegistrado != null)
                 eventos.Add(janela.EventoRegistrado);
         }
@@ -52,7 +40,6 @@ namespace CyberAccessMonitor
             AlertaWindow alerta = new AlertaWindow();
             alerta.ShowDialog();
 
-            // Opcional: salvar como evento
             eventos.Add(new Models.Evento
             {
                 DataHora = DateTime.Now,
