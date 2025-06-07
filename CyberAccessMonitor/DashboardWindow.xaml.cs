@@ -21,7 +21,7 @@ namespace CyberAccessMonitor
 {
     public partial class DashboardWindow : Window
     {
-        private readonly List<Evento> eventos = new List<Evento>();
+        private List<Evento> eventos = new List<Evento>();
 
         public DashboardWindow()
         {
