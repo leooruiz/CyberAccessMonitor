@@ -4,6 +4,8 @@ Sistema desktop em C# (WPF) para simular respostas locais a falhas de energia e 
 
 ---
 
+Vídeo PITCH: https://youtu.be/rWAi3q4DCRU
+
 ## 🎯 Objetivo
 
 Oferecer uma ferramenta simples e offline que permita:
