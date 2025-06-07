@@ -100,7 +100,7 @@
     </Compile>
     <Compile Include="Services\LogService.cs" />
     <Compile Include="Services\SyncService.cs" />
-    <Compile Include="Models\Evento.cs" />
+    <Compile Include="Models\Èvento.cs" />
     <Page Include="Views\AlertaWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
